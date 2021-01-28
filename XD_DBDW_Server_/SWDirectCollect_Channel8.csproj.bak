@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D80FB133-E52B-411D-BB0C-674D895998A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SWDirectCollect_Channel8</RootNamespace>
+    <AssemblyName>SWDirectCollect_Channel8</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.BusinessCs, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Common.BusinessCs.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.ComponentCs, Version=2.1.1.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Common.ComponentCs.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mitov.BasicLab, Version=6.0.0.0, Culture=neutral, PublicKeyToken=54b8a1f38c94221a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mitov.PlotLabBasic, Version=6.0.0.0, Culture=neutral, PublicKeyToken=1bb0b8a97236ac2e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DataFrequencySpectrum.cs" />
+    <Compile Include="Data\DataIQWaveform.cs" />
+    <Compile Include="Data\DataFunction.cs" />
+    <Compile Include="Data\DataTime.cs" />
+    <Compile Include="Data\DataProcessing.cs" />
+    <Compile Include="DataAlgorithm\fftwlib.cs" />
+    <Compile Include="DataAlgorithm\fftwtest.cs" />
+    <Compile Include="Global\DLLImport.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestDLLImport.cs" />
+    <Compile Include="Test\Other\PerformanceTestcs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\udpRecv.cs" />
+    <Compile Include="Test\TCP\TCPSocket.cs" />
+    <Compile Include="Test\Other\TestProtocol.cs" />
+    <Compile Include="Test\Test_DataProcessing.cs" />
+    <Compile Include="UI_Control\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Control\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Control\UI_FPGAConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_FPGAConfig.Designer.cs">
+      <DependentUpon>UI_FPGAConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Control\UI_Control.cs" />
+    <Compile Include="UI_Control\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Control\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Show\UI_IQWaveform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Show\UI_IQWaveform.Designer.cs">
+      <DependentUpon>UI_IQWaveform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Show\UI_FrequencySpectrum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Show\UI_FrequencySpectrum.Designer.cs">
+      <DependentUpon>UI_FrequencySpectrum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Control\UI_NetConfigData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_NetConfigData.Designer.cs">
+      <DependentUpon>UI_NetConfigData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Control\UI_RFLocalCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_RFLocalCtrl.Designer.cs">
+      <DependentUpon>UI_RFLocalCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\WindowApp.cs" />
+    <Compile Include="Config\XmlProcessing.cs" />
+    <Compile Include="UI_Show\UI_WaterfallPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Show\UI_WaterfallPlot.Designer.cs">
+      <DependentUpon>UI_WaterfallPlot.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI_Control\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Control\UI_FPGAConfig.resx">
+      <DependentUpon>UI_FPGAConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Control\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Show\UI_IQWaveform.resx">
+      <DependentUpon>UI_IQWaveform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Show\UI_FrequencySpectrum.resx">
+      <DependentUpon>UI_FrequencySpectrum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Control\UI_NetConfigData.resx">
+      <DependentUpon>UI_NetConfigData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Control\UI_RFLocalCtrl.resx">
+      <DependentUpon>UI_RFLocalCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Show\UI_WaterfallPlot.resx">
+      <DependentUpon>UI_WaterfallPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\NetConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

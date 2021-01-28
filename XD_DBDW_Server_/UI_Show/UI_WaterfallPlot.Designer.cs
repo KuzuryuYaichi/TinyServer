@@ -1,0 +1,445 @@
+﻿namespace XD_DBDW_Server
+{
+    partial class UI_WaterfallPlot
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Mitov.PlotLab.DisplayHighlighting displayHighlighting1 = new Mitov.PlotLab.DisplayHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting1 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting2 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting3 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting4 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.ChannelMouseHitPoint channelMouseHitPoint1 = new Mitov.PlotLab.ChannelMouseHitPoint();
+            Mitov.SignalLab.OptionalLabel optionalLabel1 = new Mitov.SignalLab.OptionalLabel();
+            OpenWire.Proxy.SinkPin sinkPin1 = new OpenWire.Proxy.SinkPin();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_WaterfallPlot));
+            Mitov.PlotLab.WaterfallLegendView waterfallLegendView1 = new Mitov.PlotLab.WaterfallLegendView();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground1 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.LegendViewButtonSettings legendViewButtonSettings1 = new Mitov.PlotLab.LegendViewButtonSettings();
+            Mitov.PlotLab.LegendGroup legendGroup1 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel1 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup2 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel2 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup3 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel3 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup4 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel4 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.DisplayViewSize displayViewSize1 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.WaterfallDisplayLevelView waterfallDisplayLevelView1 = new Mitov.PlotLab.WaterfallDisplayLevelView();
+            Mitov.PlotLab.LevelAxis levelAxis1 = new Mitov.PlotLab.LevelAxis();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground2 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.ViewButtonSettings viewButtonSettings1 = new Mitov.PlotLab.ViewButtonSettings();
+            Mitov.PlotLab.LevelDisplayLabel levelDisplayLabel1 = new Mitov.PlotLab.LevelDisplayLabel();
+            Mitov.PlotLab.MajorTicks majorTicks1 = new Mitov.PlotLab.MajorTicks();
+            Mitov.PlotLab.TicksStart ticksStart1 = new Mitov.PlotLab.TicksStart();
+            Mitov.PlotLab.MinorTicks minorTicks1 = new Mitov.PlotLab.MinorTicks();
+            Mitov.PlotLab.DisplayViewSize displayViewSize2 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.DisplayTitle displayTitle1 = new Mitov.PlotLab.DisplayTitle();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground3 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.DisplayViewSize displayViewSize3 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.DisplayToolBar displayToolBar1 = new Mitov.PlotLab.DisplayToolBar();
+            Mitov.PlotLab.DisplayToolBarButtons displayToolBarButtons1 = new Mitov.PlotLab.DisplayToolBarButtons();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton1 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton2 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton3 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton4 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton5 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton6 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton7 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton8 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton9 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton10 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton11 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton12 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.ToolBarPosition toolBarPosition1 = new Mitov.PlotLab.ToolBarPosition();
+            Mitov.PlotLab.DisplayTrails displayTrails1 = new Mitov.PlotLab.DisplayTrails();
+            Mitov.PlotLab.WaterfallXAxis waterfallXAxis1 = new Mitov.PlotLab.WaterfallXAxis();
+            Mitov.PlotLab.DisplayTitleLabel displayTitleLabel1 = new Mitov.PlotLab.DisplayTitleLabel();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground4 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.ViewButtonSettings viewButtonSettings2 = new Mitov.PlotLab.ViewButtonSettings();
+            Mitov.PlotLab.AxisFormat axisFormat1 = new Mitov.PlotLab.AxisFormat();
+            Mitov.PlotLab.MajorTicks majorTicks2 = new Mitov.PlotLab.MajorTicks();
+            Mitov.PlotLab.TicksStart ticksStart2 = new Mitov.PlotLab.TicksStart();
+            Mitov.PlotLab.MaxAxisValue maxAxisValue1 = new Mitov.PlotLab.MaxAxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange1 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue1 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue2 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue1 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.AxisValue axisValue1 = new Mitov.PlotLab.AxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange2 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue3 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue4 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue2 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.MinorTicks minorTicks2 = new Mitov.PlotLab.MinorTicks();
+            Mitov.PlotLab.AxisToolBar axisToolBar1 = new Mitov.PlotLab.AxisToolBar();
+            Mitov.PlotLab.AxisToolBarButtons axisToolBarButtons1 = new Mitov.PlotLab.AxisToolBarButtons();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton13 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton14 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton15 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton16 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayViewSize displayViewSize4 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.DisplayAxisZoom displayAxisZoom1 = new Mitov.PlotLab.DisplayAxisZoom();
+            Mitov.PlotLab.DisplayValueRange displayValueRange3 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue5 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue6 = new Mitov.PlotLab.DisplayOptionalValue();
+            OpenWire.Proxy.StatePin statePin1 = new OpenWire.Proxy.StatePin();
+            Mitov.PlotLab.WaterfallYAxis waterfallYAxis1 = new Mitov.PlotLab.WaterfallYAxis();
+            Mitov.PlotLab.DisplayTitleLabel displayTitleLabel2 = new Mitov.PlotLab.DisplayTitleLabel();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground5 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.ViewButtonSettings viewButtonSettings3 = new Mitov.PlotLab.ViewButtonSettings();
+            Mitov.PlotLab.AxisFormat axisFormat2 = new Mitov.PlotLab.AxisFormat();
+            Mitov.PlotLab.MajorTicks majorTicks3 = new Mitov.PlotLab.MajorTicks();
+            Mitov.PlotLab.TicksStart ticksStart3 = new Mitov.PlotLab.TicksStart();
+            Mitov.PlotLab.MaxAxisValue maxAxisValue2 = new Mitov.PlotLab.MaxAxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange4 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue7 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue8 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue3 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.AxisValue axisValue2 = new Mitov.PlotLab.AxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange5 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue9 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue10 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue4 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.MinorTicks minorTicks3 = new Mitov.PlotLab.MinorTicks();
+            Mitov.PlotLab.AxisToolBar axisToolBar2 = new Mitov.PlotLab.AxisToolBar();
+            Mitov.PlotLab.AxisToolBarButtons axisToolBarButtons2 = new Mitov.PlotLab.AxisToolBarButtons();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton17 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton18 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton19 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton20 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayViewSize displayViewSize5 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.DisplayAxisZoom displayAxisZoom2 = new Mitov.PlotLab.DisplayAxisZoom();
+            Mitov.PlotLab.DisplayValueRange displayValueRange6 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue11 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue12 = new Mitov.PlotLab.DisplayOptionalValue();
+            OpenWire.Proxy.StatePin statePin2 = new OpenWire.Proxy.StatePin();
+            Mitov.PlotLab.DisplayZoom displayZoom1 = new Mitov.PlotLab.DisplayZoom();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.waterfall1 = new Mitov.PlotLab.Waterfall(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.waterfall1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.waterfall1);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(667, 378);
+            this.panelControl1.TabIndex = 0;
+            // 
+            // waterfall1
+            // 
+            this.waterfall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.waterfall1.Dock = System.Windows.Forms.DockStyle.Fill;
+            displayItemHighlighting1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.CursorLinks = displayItemHighlighting1;
+            displayItemHighlighting2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Cursors = displayItemHighlighting2;
+            displayItemHighlighting3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Labels = displayItemHighlighting3;
+            displayItemHighlighting4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Markers = displayItemHighlighting4;
+            channelMouseHitPoint1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            optionalLabel1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            channelMouseHitPoint1.PointLabel = optionalLabel1;
+            displayHighlighting1.MouseHitPoint = channelMouseHitPoint1;
+            this.waterfall1.Highlighting = displayHighlighting1;
+            this.waterfall1.InputPin = sinkPin1;
+            this.waterfall1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("waterfall1.InternalData")));
+            displayViewBackground1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            waterfallLegendView1.Background = displayViewBackground1;
+            legendViewButtonSettings1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.Cursor = System.Windows.Forms.Cursors.Default;
+            legendViewButtonSettings1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseOverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            waterfallLegendView1.Buttons = legendViewButtonSettings1;
+            displayLabel1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 17, 1);
+            legendGroup1.Caption = displayLabel1;
+            legendGroup1.Cursor = System.Windows.Forms.Cursors.Default;
+            waterfallLegendView1.CursorLinks = legendGroup1;
+            displayLabel2.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 17, 1);
+            legendGroup2.Caption = displayLabel2;
+            legendGroup2.Cursor = System.Windows.Forms.Cursors.Default;
+            waterfallLegendView1.Cursors = legendGroup2;
+            waterfallLegendView1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            waterfallLegendView1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("waterfallLegendView1.InternalData")));
+            displayLabel3.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 17, 1);
+            legendGroup3.Caption = displayLabel3;
+            legendGroup3.Cursor = System.Windows.Forms.Cursors.Default;
+            waterfallLegendView1.Labels = legendGroup3;
+            displayLabel4.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 17, 1);
+            legendGroup4.Caption = displayLabel4;
+            legendGroup4.Cursor = System.Windows.Forms.Cursors.Default;
+            waterfallLegendView1.MarkerGroups = legendGroup4;
+            displayViewSize1.Size = ((uint)(100u));
+            waterfallLegendView1.ViewSize = displayViewSize1;
+            this.waterfall1.Legend = waterfallLegendView1;
+            levelAxis1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            levelAxis1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            levelAxis1.Max = 1000D;
+            levelAxis1.Min = 0D;
+            waterfallDisplayLevelView1.Axis = levelAxis1;
+            displayViewBackground2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            waterfallDisplayLevelView1.Background = displayViewBackground2;
+            viewButtonSettings1.Cursor = System.Windows.Forms.Cursors.Default;
+            viewButtonSettings1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings1.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            viewButtonSettings1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings1.MouseOverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            waterfallDisplayLevelView1.Button = viewButtonSettings1;
+            waterfallDisplayLevelView1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("waterfallDisplayLevelView1.InternalData")));
+            levelDisplayLabel1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 17, 1);
+            waterfallDisplayLevelView1.LevelLabel = levelDisplayLabel1;
+            ticksStart1.StartFrom = 0D;
+            majorTicks1.StartFrom = ticksStart1;
+            majorTicks1.Step = 10D;
+            waterfallDisplayLevelView1.MajorTicks = majorTicks1;
+            waterfallDisplayLevelView1.MinorTicks = minorTicks1;
+            waterfallDisplayLevelView1.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayViewSize2.Size = ((uint)(100u));
+            waterfallDisplayLevelView1.ViewSize = displayViewSize2;
+            this.waterfall1.Levels = waterfallDisplayLevelView1;
+            this.waterfall1.Location = new System.Drawing.Point(2, 2);
+            this.waterfall1.Name = "waterfall1";
+            this.waterfall1.RefreshInterval = ((uint)(100u));
+            this.waterfall1.Size = new System.Drawing.Size(663, 374);
+            this.waterfall1.TabIndex = 0;
+            this.waterfall1.Text = "waterfall1";
+            displayViewBackground3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayTitle1.Background = displayViewBackground3;
+            displayTitle1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 27, 1);
+            displayTitle1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("displayTitle1.InternalData")));
+            displayTitle1.Text = "Waterfall";
+            displayViewSize3.Size = ((uint)(100u));
+            displayTitle1.ViewSize = displayViewSize3;
+            this.waterfall1.Title = displayTitle1;
+            displayToolBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            displayToolBar1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayToolBarButtons1.Copy = displayToolBarButton1;
+            displayToolBarButtons1.Hold = displayToolBarButton2;
+            displayToolBarButtons1.Print = displayToolBarButton3;
+            displayToolBarButtons1.Save = displayToolBarButton4;
+            displayToolBarButtons1.Setup = displayToolBarButton5;
+            displayToolBarButtons1.XYZoomOn = displayToolBarButton6;
+            displayToolBarButtons1.ZoomIn = displayToolBarButton7;
+            displayToolBarButtons1.ZoomMode = displayToolBarButton8;
+            displayToolBarButtons1.ZoomNext = displayToolBarButton9;
+            displayToolBarButtons1.ZoomOff = displayToolBarButton10;
+            displayToolBarButtons1.ZoomOut = displayToolBarButton11;
+            displayToolBarButtons1.ZoomPrevious = displayToolBarButton12;
+            displayToolBar1.Buttons = displayToolBarButtons1;
+            displayToolBar1.Cursor = System.Windows.Forms.Cursors.Default;
+            displayToolBar1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            displayToolBar1.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseDownButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseOverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            toolBarPosition1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("toolBarPosition1.InternalData")));
+            displayToolBar1.Position = toolBarPosition1;
+            this.waterfall1.ToolBar = displayToolBar1;
+            displayTrails1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            displayTrails1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            this.waterfall1.Trails = displayTrails1;
+            displayTitleLabel1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 17, 1);
+            waterfallXAxis1.AxisLabel = displayTitleLabel1;
+            displayViewBackground4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            waterfallXAxis1.Background = displayViewBackground4;
+            viewButtonSettings2.Cursor = System.Windows.Forms.Cursors.Default;
+            viewButtonSettings2.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings2.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            viewButtonSettings2.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings2.MouseOverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            waterfallXAxis1.Button = viewButtonSettings2;
+            waterfallXAxis1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            waterfallXAxis1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            axisFormat1.Precision = 0;
+            waterfallXAxis1.Format = axisFormat1;
+            waterfallXAxis1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("waterfallXAxis1.InternalData")));
+            ticksStart2.StartFrom = 0D;
+            majorTicks2.StartFrom = ticksStart2;
+            majorTicks2.Step = 10D;
+            waterfallXAxis1.MajorTicks = majorTicks2;
+            maxAxisValue1.DataValue = 1024D;
+            displayOptionalValue1.Enabled = false;
+            displayOptionalValue1.Value = 1000D;
+            displayValueRange1.High = displayOptionalValue1;
+            displayOptionalValue2.Enabled = false;
+            displayOptionalValue2.Value = -1000D;
+            displayValueRange1.Low = displayOptionalValue2;
+            maxAxisValue1.Range = displayValueRange1;
+            basicAxisValue1.Value = 1024D;
+            maxAxisValue1.Tick = basicAxisValue1;
+            maxAxisValue1.Value = 1024D;
+            waterfallXAxis1.Max = maxAxisValue1;
+            axisValue1.DataValue = 0D;
+            displayOptionalValue3.Enabled = false;
+            displayOptionalValue3.Value = 1000D;
+            displayValueRange2.High = displayOptionalValue3;
+            displayOptionalValue4.Enabled = false;
+            displayOptionalValue4.Value = -1000D;
+            displayValueRange2.Low = displayOptionalValue4;
+            axisValue1.Range = displayValueRange2;
+            basicAxisValue2.Value = 0D;
+            axisValue1.Tick = basicAxisValue2;
+            axisValue1.Value = 0D;
+            waterfallXAxis1.Min = axisValue1;
+            waterfallXAxis1.MinorTicks = minorTicks2;
+            axisToolBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            axisToolBarButtons1.ZoomIn = displayToolBarButton13;
+            axisToolBarButtons1.ZoomOff = displayToolBarButton14;
+            axisToolBarButtons1.ZoomOneDir = displayToolBarButton15;
+            axisToolBarButtons1.ZoomOut = displayToolBarButton16;
+            axisToolBar1.Buttons = axisToolBarButtons1;
+            axisToolBar1.Cursor = System.Windows.Forms.Cursors.Default;
+            axisToolBar1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar1.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseDownButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseOverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            waterfallXAxis1.ToolBar = axisToolBar1;
+            waterfallXAxis1.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayViewSize4.Size = ((uint)(100u));
+            waterfallXAxis1.ViewSize = displayViewSize4;
+            displayOptionalValue5.Enabled = false;
+            displayOptionalValue5.Value = 100000000D;
+            displayValueRange3.High = displayOptionalValue5;
+            displayOptionalValue6.Enabled = true;
+            displayOptionalValue6.Value = 1E-07D;
+            displayValueRange3.Low = displayOptionalValue6;
+            displayAxisZoom1.Range = displayValueRange3;
+            waterfallXAxis1.Zooming = displayAxisZoom1;
+            waterfallXAxis1.ZoomPin = statePin1;
+            this.waterfall1.XAxis = waterfallXAxis1;
+            displayTitleLabel2.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 17, 1);
+            waterfallYAxis1.AxisLabel = displayTitleLabel2;
+            displayViewBackground5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            waterfallYAxis1.Background = displayViewBackground5;
+            viewButtonSettings3.Cursor = System.Windows.Forms.Cursors.Default;
+            viewButtonSettings3.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings3.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            viewButtonSettings3.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings3.MouseOverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            waterfallYAxis1.Button = viewButtonSettings3;
+            waterfallYAxis1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            waterfallYAxis1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            axisFormat2.Precision = 3;
+            waterfallYAxis1.Format = axisFormat2;
+            waterfallYAxis1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("waterfallYAxis1.InternalData")));
+            ticksStart3.StartFrom = 0D;
+            majorTicks3.StartFrom = ticksStart3;
+            majorTicks3.Step = 10D;
+            waterfallYAxis1.MajorTicks = majorTicks3;
+            maxAxisValue2.DataValue = 1000D;
+            displayOptionalValue7.Enabled = false;
+            displayOptionalValue7.Value = 1000D;
+            displayValueRange4.High = displayOptionalValue7;
+            displayOptionalValue8.Enabled = false;
+            displayOptionalValue8.Value = -1000D;
+            displayValueRange4.Low = displayOptionalValue8;
+            maxAxisValue2.Range = displayValueRange4;
+            basicAxisValue3.Value = 500D;
+            maxAxisValue2.Tick = basicAxisValue3;
+            maxAxisValue2.Value = 1000D;
+            waterfallYAxis1.Max = maxAxisValue2;
+            axisValue2.DataValue = -1000D;
+            displayOptionalValue9.Enabled = false;
+            displayOptionalValue9.Value = 1000D;
+            displayValueRange5.High = displayOptionalValue9;
+            displayOptionalValue10.Enabled = false;
+            displayOptionalValue10.Value = -1000D;
+            displayValueRange5.Low = displayOptionalValue10;
+            axisValue2.Range = displayValueRange5;
+            basicAxisValue4.Value = 0D;
+            axisValue2.Tick = basicAxisValue4;
+            axisValue2.Value = -1000D;
+            waterfallYAxis1.Min = axisValue2;
+            waterfallYAxis1.MinorTicks = minorTicks3;
+            axisToolBar2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            axisToolBarButtons2.ZoomIn = displayToolBarButton17;
+            axisToolBarButtons2.ZoomOff = displayToolBarButton18;
+            axisToolBarButtons2.ZoomOneDir = displayToolBarButton19;
+            axisToolBarButtons2.ZoomOut = displayToolBarButton20;
+            axisToolBar2.Buttons = axisToolBarButtons2;
+            axisToolBar2.Cursor = System.Windows.Forms.Cursors.Default;
+            axisToolBar2.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar2.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseDownButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseOverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            waterfallYAxis1.ToolBar = axisToolBar2;
+            waterfallYAxis1.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayViewSize5.Size = ((uint)(100u));
+            waterfallYAxis1.ViewSize = displayViewSize5;
+            displayOptionalValue11.Enabled = false;
+            displayOptionalValue11.Value = 100000000D;
+            displayValueRange6.High = displayOptionalValue11;
+            displayOptionalValue12.Enabled = true;
+            displayOptionalValue12.Value = 1E-07D;
+            displayValueRange6.Low = displayOptionalValue12;
+            displayAxisZoom2.Range = displayValueRange6;
+            waterfallYAxis1.Zooming = displayAxisZoom2;
+            waterfallYAxis1.ZoomPin = statePin2;
+            this.waterfall1.YAxis = waterfallYAxis1;
+            displayZoom1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.waterfall1.Zooming = displayZoom1;
+            // 
+            // UI_WaterfallPlot
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panelControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "UI_WaterfallPlot";
+            this.Size = new System.Drawing.Size(667, 378);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.waterfall1)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private Mitov.PlotLab.Waterfall waterfall1;
+    }
+}

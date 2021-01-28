@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!--千兆网设置-->
+  <LocalIP>128.0.82.130</LocalIP>
+  <DevIP>128.0.1.1</DevIP>
+  <CC_Port>4001</CC_Port>
+  <RC_Port>28672</RC_Port>
+  
+  <!--万兆网设置-->
+  <Net10G_LocalIP>10.168.4.14</Net10G_LocalIP>
+  <Net10G_LocalPort>400</Net10G_LocalPort>
+  <Net10G_GroupIP>239.1.1.{0}</Net10G_GroupIP>
+
+  <!--射频协议版本-->
+  <!--1:版本1.3，2：版本1.6,3：版本713-->
+  <RFCtrlVersion>2</RFCtrlVersion>
+  <!--射频连接方式-->
+  <!--0:直连，1：数字1号口控制，2：数字2号口控制，3：数字3号口控制，4：数字4号口控制，5：数字5号口控制-->
+  <RFRFCtrlType>0</RFRFCtrlType>
+
+  <!--选择设备-->
+  <!--0：20通道，2：8通道，3：18通道，5：JGZC设备-->
+  <DevID>5</DevID>
+</config>

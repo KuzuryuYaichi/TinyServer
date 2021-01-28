@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6F47B67-8890-4D96-BC7B-18217BBB3834}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XD_DBDW_Server2</RootNamespace>
+    <AssemblyName>XD_DBDW_Server2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.BusinessCs">
+      <HintPath>dll\Common.BusinessCs.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.ComponentCs">
+      <HintPath>dll\Common.ComponentCs.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.BonusSkins.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.Data.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.Images.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.Printing.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.Sparkline.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.XtraBars.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.XtraGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.XtraNavBar.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DevExpress.XtraPrinting.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Mitov.BasicLab">
+      <HintPath>dll\Mitov.BasicLab.dll</HintPath>
+    </Reference>
+    <Reference Include="Mitov.PlotLabBasic">
+      <HintPath>dll\Mitov.PlotLabBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\XmlProcessing.cs" />
+    <Compile Include="DataAlgorithm\fftwlib.cs" />
+    <Compile Include="DataAlgorithm\fftwtest.cs" />
+    <Compile Include="DataAlgorithm\Filter.cs" />
+    <Compile Include="DataAlgorithm\Hanning.cs" />
+    <Compile Include="Data\DataFrequencySpectrum.cs" />
+    <Compile Include="Data\DataFunction.cs" />
+    <Compile Include="Data\DataIQWaveform.cs" />
+    <Compile Include="Data\DataProcessing.cs" />
+    <Compile Include="Data\DataTime.cs" />
+    <Compile Include="Data\udpRecv.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\WindowApp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI_Control\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Control\SplashScreen1.Designer.cs" />
+    <Compile Include="UI_Control\UI_AGC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_AGC.Designer.cs" />
+    <Compile Include="UI_Control\UI_Control.cs" />
+    <Compile Include="UI_Control\UI_FPGAConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_FPGAConfig.Designer.cs" />
+    <Compile Include="UI_Control\UI_HeartBeat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_HeartBeat.Designer.cs" />
+    <Compile Include="UI_Control\UI_NetConfigData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_NetConfigData.Designer.cs" />
+    <Compile Include="UI_Control\UI_RFLocalCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Control\UI_RFLocalCtrl.Designer.cs" />
+    <Compile Include="UI_Control\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Control\WaitForm1.Designer.cs" />
+    <Compile Include="UI_Show\UI_FrequencySpectrum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Show\UI_FrequencySpectrum.Designer.cs" />
+    <Compile Include="UI_Show\UI_IQWaveform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Show\UI_IQWaveform.Designer.cs" />
+    <Compile Include="UI_Show\UI_WaterfallPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Show\UI_WaterfallPlot.Designer.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI_Control\SplashScreen1.resx" />
+    <EmbeddedResource Include="UI_Control\UI_AGC.resx" />
+    <EmbeddedResource Include="UI_Control\UI_FPGAConfig.resx" />
+    <EmbeddedResource Include="UI_Control\UI_HeartBeat.resx" />
+    <EmbeddedResource Include="UI_Control\UI_NetConfigData.resx" />
+    <EmbeddedResource Include="UI_Control\UI_RFLocalCtrl.resx" />
+    <EmbeddedResource Include="UI_Control\WaitForm1.resx" />
+    <EmbeddedResource Include="UI_Show\UI_FrequencySpectrum.resx" />
+    <EmbeddedResource Include="UI_Show\UI_IQWaveform.resx" />
+    <EmbeddedResource Include="UI_Show\UI_WaterfallPlot.resx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
