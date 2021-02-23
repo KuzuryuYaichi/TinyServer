@@ -364,7 +364,7 @@ namespace XD_DBDW_Server
             repositoryItemComboBox4.Items.Clear();
             this.repositoryItemComboBox4.Items.AddRange(new object[] { "0", "1", "2", "3", "4", "5", "6", "7", "8" });
             repositoryItemComboBox5.Items.Clear();
-            this.repositoryItemComboBox5.Items.AddRange(new object[] {"1250Hz","625Hz","312.5Hz","156.25Hz"});
+            this.repositoryItemComboBox5.Items.AddRange(new object[] {"1250Hz","625Hz","312.5Hz","156.25Hz", "2500Hz"});
             this.repositoryItemComboBox5.NullText = "2500Hz";
             this.repositoryItemComboBox11.Items.AddRange(new object[] { "无", "Rect", "Hanning", "Hamming", "Blackman", "Gaussion" });
             this.repositoryItemComboBox11.NullText = "无";
@@ -642,6 +642,15 @@ namespace XD_DBDW_Server
                     m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000303, CW_Value));
                 }
             }
+        }
+
+        //平滑次数
+        private void repositoryItemComboBox17_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OrderController oc = new OrderController();
+            uint ichan = 0;
+            int select = ((DevExpress.XtraEditors.ComboBoxEdit)sender).SelectedIndex;
+            m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000ddd, (uint)select));
         }
     }
 }

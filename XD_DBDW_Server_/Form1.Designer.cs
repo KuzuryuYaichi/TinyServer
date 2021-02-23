@@ -514,24 +514,7 @@
             this.repositoryItemComboBox6.Items.AddRange(new object[] {
             "1",
             "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
+            "4"});
             this.repositoryItemComboBox6.Name = "repositoryItemComboBox6";
             this.repositoryItemComboBox6.NullText = "1";
             this.repositoryItemComboBox6.SelectedIndexChanged += new System.EventHandler(this.repositoryItemComboBox6_SelectedIndexChanged);
@@ -1013,25 +996,10 @@
             this.repositoryItemComboBox17.Items.AddRange(new object[] {
             "1",
             "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
+            "4"});
             this.repositoryItemComboBox17.Name = "repositoryItemComboBox17";
+            this.repositoryItemComboBox17.NullText = "4";
+            this.repositoryItemComboBox17.SelectedIndexChanged += new System.EventHandler(this.repositoryItemComboBox17_SelectedIndexChanged);
             // 
             // ribbonPage1
             // 
