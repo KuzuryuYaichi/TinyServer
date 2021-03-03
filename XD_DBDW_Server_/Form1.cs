@@ -42,6 +42,7 @@ namespace XD_DBDW_Server
 
             this.barToggleSwitchItem3.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.BarToggleSwitchItem3_CheckedChanged);
             this.barToggleSwitchItem2.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.BarToggleSwitchItem2_CheckedChanged);
+            this.barToggleSwitchItem4.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.BarToggleSwitchItem4_CheckedChanged);
 
             #region 网络初始化
             try
@@ -468,7 +469,6 @@ namespace XD_DBDW_Server
         //射频MGC-AGC开关
         private void Ctrl_RF_AGC_MGC_Switch(bool checkeStatus)
         {
-            OrderController oc = new OrderController();
             if (barEditItem10.EditValue != null)
             {
                 Ctrl_RF_Desc(Decimal.ToUInt32((decimal)barEditItem10.EditValue), checkeStatus);
@@ -490,6 +490,20 @@ namespace XD_DBDW_Server
             uint ichan = 0;
             uint Checked = (uint)(checkedStatus ? 1 : 0);
             m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000103, Checked, value));
+        }
+
+        private void BarToggleSwitchItem4_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool checkeStatus = ((DevExpress.XtraBars.BarToggleSwitchItem)sender).Checked;
+            Is_Record(checkeStatus);
+        }
+
+        private void Is_Record(bool checkedStatus)
+        {
+            OrderController oc = new OrderController();
+            uint ichan = 0;
+            uint Checked = (uint)(checkedStatus ? 1 : 0);
+            m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000bbb, Checked));
         }
 
         private void barButtonItem15_ItemClick(object sender, ItemClickEventArgs e)

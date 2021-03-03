@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemPageNumberEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPageNumberEdit();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
@@ -108,6 +109,7 @@
             this.repositoryItemComboBox16 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.barEditItem17 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemComboBox17 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.barToggleSwitchItem4 = new DevExpress.XtraBars.BarToggleSwitchItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -122,6 +124,7 @@
             this.FreqBd = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.repositoryItemComboBox4 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
@@ -135,6 +138,8 @@
             this.repositoryItemSpinEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.repositoryItemCheckedComboBoxEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit();
             this.repositoryItemCheckedComboBoxEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit();
+            this.repositoryItemToggleSwitch1 = new DevExpress.XtraEditors.Repository.RepositoryItemToggleSwitch();
+            this.repositoryItemToggleSwitch2 = new DevExpress.XtraEditors.Repository.RepositoryItemToggleSwitch();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel2 = new DevExpress.XtraBars.Docking.DockPanel();
@@ -158,6 +163,10 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraFolderBrowserDialog1 = new DevExpress.XtraEditors.XtraFolderBrowserDialog(this.components);
+            this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
+            this.barEditItem18 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemCheckedComboBoxEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).BeginInit();
@@ -192,6 +201,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.dockPanel2.SuspendLayout();
             this.panelContainer1.SuspendLayout();
@@ -205,7 +216,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit3)).BeginInit();
             this.SuspendLayout();
+            // 
+            // repositoryItemButtonEdit2
+            // 
+            this.repositoryItemButtonEdit2.AutoHeight = false;
+            this.repositoryItemButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.repositoryItemButtonEdit2.Name = "repositoryItemButtonEdit2";
             // 
             // repositoryItemPageNumberEdit2
             // 
@@ -274,10 +294,12 @@
             this.barEditItemCW,
             this.barButtonItem21,
             this.barEditItem9,
-            this.barEditItem17});
+            this.barEditItem17,
+            this.barToggleSwitchItem4,
+            this.barEditItem18});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ribbonControl.MaxItemId = 142;
+            this.ribbonControl.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.ribbonControl.MaxItemId = 151;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.barStaticItem5);
@@ -316,10 +338,13 @@
             this.repositoryItemCheckedComboBoxEdit1,
             this.repositoryItemCheckedComboBoxEdit2,
             this.repositoryItemComboBox16,
-            this.repositoryItemComboBox17});
+            this.repositoryItemComboBox17,
+            this.repositoryItemToggleSwitch1,
+            this.repositoryItemToggleSwitch2,
+            this.repositoryItemCheckedComboBoxEdit3});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(1462, 147);
+            this.ribbonControl.Size = new System.Drawing.Size(1671, 184);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -1001,6 +1026,12 @@
             this.repositoryItemComboBox17.NullText = "4";
             this.repositoryItemComboBox17.SelectedIndexChanged += new System.EventHandler(this.repositoryItemComboBox17_SelectedIndexChanged);
             // 
+            // barToggleSwitchItem4
+            // 
+            this.barToggleSwitchItem4.Caption = "落盘开关";
+            this.barToggleSwitchItem4.Id = 145;
+            this.barToggleSwitchItem4.Name = "barToggleSwitchItem4";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1076,7 +1107,8 @@
             this.ribbonPageGroup7,
             this.FreqBd,
             this.ribbonPageGroup10,
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup12});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "频谱分析";
             // 
@@ -1118,6 +1150,13 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barEditItem17);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "窄带数据处理";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.barToggleSwitchItem4);
+            this.ribbonPageGroup12.ItemLinks.Add(this.barEditItem18);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            this.ribbonPageGroup12.Text = "宽带落盘";
             // 
             // repositoryItemComboBox1
             // 
@@ -1297,16 +1336,30 @@
             this.repositoryItemCheckedComboBoxEdit2.Name = "repositoryItemCheckedComboBoxEdit2";
             this.repositoryItemCheckedComboBoxEdit2.SelectAllItemVisible = false;
             // 
+            // repositoryItemToggleSwitch1
+            // 
+            this.repositoryItemToggleSwitch1.AutoHeight = false;
+            this.repositoryItemToggleSwitch1.Name = "repositoryItemToggleSwitch1";
+            this.repositoryItemToggleSwitch1.OffText = "Off";
+            this.repositoryItemToggleSwitch1.OnText = "On";
+            // 
+            // repositoryItemToggleSwitch2
+            // 
+            this.repositoryItemToggleSwitch2.AutoHeight = false;
+            this.repositoryItemToggleSwitch2.Name = "repositoryItemToggleSwitch2";
+            this.repositoryItemToggleSwitch2.OffText = "Off";
+            this.repositoryItemToggleSwitch2.OnText = "On";
+            // 
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem2);
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem3);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 557);
-            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 716);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1462, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1671, 40);
             // 
             // dockManager
             // 
@@ -1354,11 +1407,10 @@
             this.panelContainer1.Controls.Add(this.Export);
             this.panelContainer1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.panelContainer1.ID = new System.Guid("06e5f075-5df0-4559-9520-39221ed0a408");
-            this.panelContainer1.Location = new System.Drawing.Point(0, 147);
-            this.panelContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelContainer1.Location = new System.Drawing.Point(0, 184);
             this.panelContainer1.Name = "panelContainer1";
             this.panelContainer1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.panelContainer1.Size = new System.Drawing.Size(200, 410);
+            this.panelContainer1.Size = new System.Drawing.Size(200, 532);
             this.panelContainer1.Text = "W";
             // 
             // dockPanel
@@ -1367,19 +1419,19 @@
             this.dockPanel.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.dockPanel.ID = new System.Guid("a045df26-1503-4d9a-99c1-a531310af22b");
             this.dockPanel.Location = new System.Drawing.Point(0, 0);
-            this.dockPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dockPanel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dockPanel.Name = "dockPanel";
-            this.dockPanel.OriginalSize = new System.Drawing.Size(200, 186);
-            this.dockPanel.Size = new System.Drawing.Size(200, 208);
+            this.dockPanel.OriginalSize = new System.Drawing.Size(229, 267);
+            this.dockPanel.Size = new System.Drawing.Size(200, 270);
             this.dockPanel.Text = "文件列表";
             // 
             // dockPanel_Container
             // 
             this.dockPanel_Container.Controls.Add(this.accordionControl);
-            this.dockPanel_Container.Location = new System.Drawing.Point(4, 23);
-            this.dockPanel_Container.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dockPanel_Container.Location = new System.Drawing.Point(5, 28);
+            this.dockPanel_Container.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dockPanel_Container.Name = "dockPanel_Container";
-            this.dockPanel_Container.Size = new System.Drawing.Size(191, 180);
+            this.dockPanel_Container.Size = new System.Drawing.Size(188, 235);
             this.dockPanel_Container.TabIndex = 0;
             // 
             // accordionControl
@@ -1389,9 +1441,9 @@
             this.accordionControl.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.mainAccordionGroup});
             this.accordionControl.Location = new System.Drawing.Point(0, 0);
-            this.accordionControl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.accordionControl.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.accordionControl.Name = "accordionControl";
-            this.accordionControl.Size = new System.Drawing.Size(191, 180);
+            this.accordionControl.Size = new System.Drawing.Size(188, 235);
             this.accordionControl.TabIndex = 0;
             this.accordionControl.Text = "accordionControl";
             this.accordionControl.SelectedElementChanged += new DevExpress.XtraBars.Navigation.SelectedElementChangedEventHandler(this.accordionControl_SelectedElementChanged);
@@ -1409,28 +1461,27 @@
             this.Export.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.Export.FloatVertical = true;
             this.Export.ID = new System.Guid("46ba664b-d895-4cfe-8108-7195d37fe8cf");
-            this.Export.Location = new System.Drawing.Point(0, 208);
-            this.Export.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Export.Location = new System.Drawing.Point(0, 270);
             this.Export.Name = "Export";
-            this.Export.OriginalSize = new System.Drawing.Size(200, 180);
-            this.Export.Size = new System.Drawing.Size(200, 202);
+            this.Export.OriginalSize = new System.Drawing.Size(229, 260);
+            this.Export.Size = new System.Drawing.Size(200, 262);
             this.Export.Text = "请求记录";
             // 
             // dockPanel3_Container
             // 
             this.dockPanel3_Container.Controls.Add(this.accordionControl1);
-            this.dockPanel3_Container.Location = new System.Drawing.Point(4, 23);
-            this.dockPanel3_Container.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockPanel3_Container.Location = new System.Drawing.Point(5, 28);
             this.dockPanel3_Container.Name = "dockPanel3_Container";
-            this.dockPanel3_Container.Size = new System.Drawing.Size(191, 175);
+            this.dockPanel3_Container.Size = new System.Drawing.Size(188, 229);
             this.dockPanel3_Container.TabIndex = 0;
             // 
             // accordionControl1
             // 
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(191, 175);
+            this.accordionControl1.Size = new System.Drawing.Size(188, 229);
             this.accordionControl1.TabIndex = 0;
             this.accordionControl1.Text = "accordionControl1";
             // 
@@ -1451,7 +1502,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 72);
+            this.label1.Size = new System.Drawing.Size(22, 90);
             this.label1.TabIndex = 2;
             this.label1.Text = "窄\r\n带\r\n检\r\n测\r\n结\r\n果";
             // 
@@ -1515,18 +1566,37 @@
             // 
             this.xtraFolderBrowserDialog1.SelectedPath = "xtraFolderBrowserDialog1";
             // 
+            // repositoryItemMemoEdit1
+            // 
+            this.repositoryItemMemoEdit1.Name = "repositoryItemMemoEdit1";
+            // 
+            // barEditItem18
+            // 
+            this.barEditItem18.Caption = "路数选择";
+            this.barEditItem18.Edit = this.repositoryItemCheckedComboBoxEdit3;
+            this.barEditItem18.Id = 150;
+            this.barEditItem18.Name = "barEditItem18";
+            // 
+            // repositoryItemCheckedComboBoxEdit3
+            // 
+            this.repositoryItemCheckedComboBoxEdit3.AutoHeight = false;
+            this.repositoryItemCheckedComboBoxEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemCheckedComboBoxEdit3.Name = "repositoryItemCheckedComboBoxEdit3";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1462, 588);
+            this.ClientSize = new System.Drawing.Size(1671, 756);
             this.Controls.Add(this.panelContainer1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbonControl);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).EndInit();
@@ -1561,6 +1631,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.dockPanel2.ResumeLayout(false);
             this.panelContainer1.ResumeLayout(false);
@@ -1575,6 +1647,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1709,5 +1783,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit repositoryItemCheckedComboBoxEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit repositoryItemCheckedComboBoxEdit2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemToggleSwitch repositoryItemToggleSwitch1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit repositoryItemMemoEdit1;
+        private DevExpress.XtraBars.BarToggleSwitchItem barToggleSwitchItem4;
+        private DevExpress.XtraEditors.Repository.RepositoryItemToggleSwitch repositoryItemToggleSwitch2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit2;
+        private DevExpress.XtraBars.BarEditItem barEditItem18;
+        private DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit repositoryItemCheckedComboBoxEdit3;
     }
 }
