@@ -88,7 +88,7 @@ namespace XD_DBDW_Server
             this.hour = BitConverter.ToInt16(t, 28);
             this.minute = BitConverter.ToInt16(t, 30);
             this.second = BitConverter.ToInt16(t, 32);
-            this.microsecond = BitConverter.ToUInt32(t, 36)/192;
+            this.microsecond = BitConverter.ToUInt32(t, 36);
             this.millisecond = microsecond / 1000;
             this.microsecond %= 1000;
         }

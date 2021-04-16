@@ -503,7 +503,7 @@ namespace XD_DBDW_Server
             OrderController oc = new OrderController();
             uint ichan = 0;
             uint Checked = (uint)(checkedStatus ? 1 : 0);
-            m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000bbb, Checked));
+            m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000106, Checked));
         }
 
         private void barButtonItem15_ItemClick(object sender, ItemClickEventArgs e)
@@ -558,7 +558,7 @@ namespace XD_DBDW_Server
                 dd[2] = (byte)(d & 0xFF);
                 uint ichan = 0;
                 uint data = (uint)((dd[2] << 16) | (dd[1] << 8) | dd[0]);
-                m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000bbb, data));
+                m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000106, data));
             }
         }
 
@@ -566,11 +566,6 @@ namespace XD_DBDW_Server
         private void repositoryItemComboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             int select = ((DevExpress.XtraEditors.ComboBoxEdit)sender).SelectedIndex;
-            //int[] channels = new int[4];
-            //channels[0] = select * 4 + 0;
-            //channels[1] = select * 4 + 1;
-            //channels[2] = select * 4 + 2;
-            //channels[3] = select * 4 + 3;
             int channel = select;
             m_DataProcessing.Set_NB_Filter(channel);
         }
@@ -665,6 +660,53 @@ namespace XD_DBDW_Server
             uint ichan = 0;
             int select = ((DevExpress.XtraEditors.ComboBoxEdit)sender).SelectedIndex;
             m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000ddd, (uint)select));
+        }
+
+        private void barButtonItem22_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            m_UI_FrequencySpectrum.FHSS_Check(barStaticItem4);
+        }
+
+        private void freqBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (barEditItem14.EditValue != null)
+            {
+                uint ichan = Decimal.ToUInt32((decimal)barEditItem14.EditValue) - 1;
+                if (barEditItemFreq.EditValue != null)
+                {
+                    OrderController oc = new OrderController();
+                    uint freq = Decimal.ToUInt32((decimal)barEditItemFreq.EditValue * 1000000);
+                    m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000101, freq));
+                }
+            }
+        }
+
+        private void bandBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (barEditItem14.EditValue != null)
+            {
+                uint ichan = Decimal.ToUInt32((decimal)barEditItem14.EditValue) - 1;
+                if (barEditItemBandWidth.EditValue != null)
+                {
+                    OrderController oc = new OrderController();
+                    uint bandwidth = UInt32.Parse((string)barEditItemBandWidth.EditValue);
+                    m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000102, bandwidth));
+                }
+            }
+        }
+
+        private void modeBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (barEditItem14.EditValue != null)
+            {
+                uint ichan = Decimal.ToUInt32((decimal)barEditItem14.EditValue) - 1;
+                if (barEditItemMode.EditValue != null)
+                {
+                    OrderController oc = new OrderController();
+                    uint mode = (uint)repositoryItemComboBox14.Items.IndexOf(barEditItemMode.EditValue);
+                    m_FileProcessing.udpRecvOrder.SendOrder(oc.pack(ichan, 0x10000302, mode));
+                }
+            }
         }
     }
 }

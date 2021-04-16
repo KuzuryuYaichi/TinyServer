@@ -126,7 +126,7 @@ namespace XD_DBDW_Server
                         }
                     case 0x10000103:
                         {
-                            form.SetReturnStatus("射频衰减控制" + ((t[24] == 1) ? "成功" : "失败"));
+                            form.SetReturnStatus("射频衰减控制成功");
                             break;
                         }
                     case 0x10000302:
@@ -158,6 +158,11 @@ namespace XD_DBDW_Server
                     case 0x10000202:
                         {
                             form.SetReturnStatus("FFT点数配置成功");
+                            break;
+                        }
+                    case 0x10000ddd:
+                        {
+                            form.SetReturnStatus("平滑次数配置成功");
                             break;
                         }
                     default: break;

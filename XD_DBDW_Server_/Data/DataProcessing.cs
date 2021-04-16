@@ -168,12 +168,29 @@ namespace XD_DBDW_Server
             if(dataType == 0 && BitConverter.ToInt32(t, 4) == (uint)DATA_TYPE.DT_NB_DDC) //前4字节是ID 屏蔽网络上的非命令包
             {
                 int channel = BitConverter.ToInt32(t, 16);
-                const int DATA_LEN = 512 * 2 * 2;
+                int DATA_LEN = 512 * 2 * 2;
                 if (NB_Filter != channel)
                     return;
                 int NB_DataMode = BitConverter.ToInt32(t, 92);
                 byte[] fData = new byte[DATA_LEN];
                 Array.Copy(t, 104, fData, 0, DATA_LEN);
+                //switch ((DataAndFreq.NB_DATA_MODE)NB_DataMode)
+                //{
+                //    case DataAndFreq.NB_DATA_MODE.NB_MODE_IQ:
+                //    case DataAndFreq.NB_DATA_MODE.NB_MODE_ISB:
+                //    {
+                //        Array.Copy(t, 104, fData, 0, DATA_LEN);
+                //        break;
+                //    }
+                //    case DataAndFreq.NB_DATA_MODE.NB_MODE_AM:
+                //    case DataAndFreq.NB_DATA_MODE.NB_MODE_USB:
+                //    case DataAndFreq.NB_DATA_MODE.NB_MODE_CW:
+                //    case DataAndFreq.NB_DATA_MODE.NB_MODE_LSB:
+                //    {
+                //        Array.Copy(t, 104, fData, 0, DATA_LEN / 2);
+                //        break;
+                //    }
+                //}
                 DataAndFreq nDataAndFreq = new DataAndFreq(t, fData, 1, null, null, NB_DataMode);
                 m_queue.Enqueue(nDataAndFreq);
             }
@@ -233,10 +250,41 @@ namespace XD_DBDW_Server
 
                 int BaseIndex = dataLength * ResolutionIndex;
 
-                for (int i = 0; i < dataLength / 2; ++i)
+                //for (int i = 0; i < dataLength; ++i)
+                //{
+                //    IQDataResolutionOrg[BaseIndex + i] = (double)BitConverter.ToInt16(t.Data, 2 * i);
+                //}
+
+                switch (t.NB_DataMode)
                 {
-                    IQDataResolutionOrg[BaseIndex + 2 * i] = (double)BitConverter.ToInt16(t.Data, 4 * i);
-                    IQDataResolutionOrg[BaseIndex + 2 * i + 1] = (double)BitConverter.ToInt16(t.Data, 4 * i + 2);
+                    case DataAndFreq.NB_DATA_MODE.NB_MODE_IQ:
+                    case DataAndFreq.NB_DATA_MODE.NB_MODE_ISB:
+                        {
+                            for (int k = 0; k < dataLength; ++k)
+                            {
+                                IQDataResolutionOrg[BaseIndex + k] = (double)BitConverter.ToInt16(t.Data, 2 * k);
+                            }
+                            break;
+                        }
+                    case DataAndFreq.NB_DATA_MODE.NB_MODE_AM:
+                    case DataAndFreq.NB_DATA_MODE.NB_MODE_USB:
+                    case DataAndFreq.NB_DATA_MODE.NB_MODE_CW:
+                        {
+                            for (int k = dataLength / 2 - 1; k >= 0; k--)
+                            {
+                                IQDataResolutionOrg[2 * k] = (double)BitConverter.ToInt16(t.Data, 2 * k);
+                            }
+                            break;
+                        }
+                    case DataAndFreq.NB_DATA_MODE.NB_MODE_LSB:
+                        {
+                            for (int k = dataLength / 2 - 1; k >= 0; k--)
+                            {
+                                IQDataResolutionOrg[2 * k + 1] = (double)BitConverter.ToInt16(t.Data, 2 * k);
+                            }
+                            break;
+                        }
+                    default: break;
                 }
 
                 if (++ResolutionIndex < mm_Resolution)//凑包个数计数

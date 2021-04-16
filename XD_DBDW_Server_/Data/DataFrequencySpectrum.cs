@@ -67,6 +67,14 @@ namespace XD_DBDW_Server
             }
             else
             {
+                hdin = GCHandle.Alloc(t.m_Data, GCHandleType.Pinned);
+                hdout = GCHandle.Alloc(outData, GCHandleType.Pinned);
+                dplan = fftw.dft_1d(t.m_Data.Length / 2, hdin.AddrOfPinnedObject(), hdout.AddrOfPinnedObject(), fftw_direction.Forward, fftw_flags.Measure);
+                fftw.execute(dplan);
+                fftw.destroy_plan(dplan);
+                hdin.Free();
+                hdout.Free();
+
                 switch (t.NB_DataMode)
                 {
                     case DataAndFreq.NB_DATA_MODE.NB_MODE_IQ:
@@ -85,8 +93,9 @@ namespace XD_DBDW_Server
                     case DataAndFreq.NB_DATA_MODE.NB_MODE_USB:
                     case DataAndFreq.NB_DATA_MODE.NB_MODE_CW:
                         {
-                            for (int k = 0; k < outData.Length / 2; k++)
+                            for (int k = outData.Length / 2 - 1; k >=0; k--)
                             {
+                                t.m_Data[2 * k] = t.m_Data[k];
                                 t.m_Data[2 * k + 1] = 0;
                             }
                             hdin = GCHandle.Alloc(t.m_Data, GCHandleType.Pinned);
@@ -100,8 +109,9 @@ namespace XD_DBDW_Server
                         }
                     case DataAndFreq.NB_DATA_MODE.NB_MODE_LSB:
                         {
-                            for (int k = 0; k < outData.Length / 2; k++)
+                            for (int k = outData.Length / 2 - 1; k >= 0; k--)
                             {
+                                t.m_Data[2 * k + 1] = t.m_Data[k];
                                 t.m_Data[2 * k] = 0;
                             }
                             hdin = GCHandle.Alloc(t.m_Data, GCHandleType.Pinned);

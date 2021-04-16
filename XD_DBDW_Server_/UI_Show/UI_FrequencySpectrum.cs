@@ -15,12 +15,18 @@ namespace XD_DBDW_Server
     {
 
         public delegate void PushDataHandler(double[] data);
-        string Mark_max;
+        int last_index = 0;
+        int checktime = 0;
+        double Mark_max;
+        Timer timer;
 
         public UI_FrequencySpectrum()
         {
             InitializeComponent();
             InitScope();
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
         }
 
         //频域显示参数LX
@@ -42,7 +48,37 @@ namespace XD_DBDW_Server
 
             }
             PushFrequencyData(t.Power);
-            Mark_max = t.Power.Max().ToString("0.00");
+
+            Mark_max = double.MinValue;
+            int index = last_index;
+            for (int i=0;i<t.Power.Length;i++)
+            {
+                if (t.Power[i] > Mark_max)
+                {
+                    index = i;
+                    Mark_max = t.Power[i];
+                }
+            }
+            if(Mark_max > -20 && Math.Abs(last_index - index) > 10)
+            {
+                last_index = index;
+                checktime++;
+            }
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            barStaticItem.Caption = "次数:" + checktime;
+            timer.Stop();
+        }
+
+        DevExpress.XtraBars.BarStaticItem barStaticItem;
+
+        public void FHSS_Check(DevExpress.XtraBars.BarStaticItem item)
+        {
+            barStaticItem = item;
+            checktime = 0;
+            timer.Start();
         }
 
         /// <summary>   
@@ -55,7 +91,6 @@ namespace XD_DBDW_Server
             scope1.XAxis.Min.Tick.AutoScale = false;
             scope1.XAxis.Max.Tick.AutoScale = false;
             scope1.XAxis.AxisLabel.Text = " MHz";
-
             scope1.XAxis.MajorTicks.StartFrom.Mode = MajorTicksMode.Override;
 
             // 隐藏网站panel -----------------
@@ -67,8 +102,6 @@ namespace XD_DBDW_Server
             panel.ResumeLayout(false);
             panel.PerformLayout();
             scope1.Controls.Add(panel);
-
-            //----------------------------------------------------------------------//
 
             scope1.Title.Text = "";
             scope1.Labels[0].Visible = false;
@@ -86,13 +119,8 @@ namespace XD_DBDW_Server
             scope1.YAxis.Format.PrecisionMode = Mitov.PlotLab.PrecisionMode.General;//一般
             ///网格刻线
             scope1.YAxis.DataView.Lines.Visible = true;
-
-
-
             scope1.Hold = false;
-
-            scope1.RefreshInterval = ((uint)(100u));
-
+            scope1.RefreshInterval = (uint)(100u);
         }
 
         /// <summary>
@@ -122,7 +150,7 @@ namespace XD_DBDW_Server
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
-            textBox1.AppendText((Mark_max) + " dBm");
+            textBox1.AppendText((Mark_max.ToString("0.00")) + " dBm");
         }
     }
 }
